@@ -39,7 +39,7 @@ print(dataset.describe())
 # Έλεγχος αν υπάρχουν αρκετά δείγματα για διαχωρισμό
 if len(dataset) > 1:
     # Διαχωρισμός χαρακτηριστικών (X) και στόχου (y)
-    X = dataset[['views', 'stars']]
+    X = dataset[['stars', 'views']]
     y = dataset['sales']
 
     # Διαχωρισμός του dataset σε σύνολα εκπαίδευσης και δοκιμής
@@ -60,9 +60,9 @@ if len(dataset) > 1:
 
     # Οπτικοποίηση των προβλέψεων
     plt.scatter(y_test, y_pred)
-    plt.xlabel('Πραγματικές κρατήσεις')
-    plt.ylabel('Προβλεπόμενες κρατήσεις')
-    plt.title('Πραγματικές vs Προβλεπόμενες κρατήσεις')
+    plt.xlabel('Πραγματικές πωλήσεις')
+    plt.ylabel('Προβλεπόμενες πωλήσεις')
+    plt.title('Πραγματικές vs Προβλεπόμενες πωλήσεις')
     plt.savefig('predictions_plot.png')
     plt.show()
 
