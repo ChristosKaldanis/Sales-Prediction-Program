@@ -1,11 +1,11 @@
 # Sales-Prediction-Program
 # Info
 
-# Περιγραφή Project
-Το Project Sales-Prediction-Program αφορά την πρόβλεψη των πωλήσεων (π.χ ενός αντικειμένου) με βάση ένα .csv αρχείο το οποίο πρέπει να περιέχει δύο στήλες με τις τιμές των views και των rating stars, χρησιμοποιώντας τις βιβλιοθήκες Pandas, Numpy, Sklearn και Matplotlib.
+# Project Description
+The Sales-Prediction-Program project is aimed at predicting sales (e.g., of an item) based on a .csv file, which must contain two columns with values for views and rating stars, using the Pandas, Numpy, Sklearn, and Matplotlib libraries.
 
-# Μεθοδολογία 
-Αρχικά, αφού φορτώσουμε το dataset από το αρχείο .csv, πρέπει να δούμε αν οι τιμές της στήλης views περιέχουν το σύμβολο ',' και αν υπάρχουν να το αντικαταστήσουμε με το σύμβολο του κενού, με σκοπό να μην υπάρχουν λανθασμένα αποτελέσματα ή απώλειες τιμών. Στη συνέχεια, μετατρέπουμε όλα  μας τα δεδομένα σε αριθμητικά για λόγους επαλήθευσης και τα στρογγυλοποιούμε στο ένα δεκαδικό ψηφίο. Εξετάζουμε αν υπάρχουν ελλιπή δεδομένα και αν υπάρχουν τα αφαιρούμε. Προσθέτουμε μία στήλη στο dataset με τυχαίες πωλήσεις ώστε να τις συγκρίνουμε στο τέλος με εκείνες που θα προκύψουν από το μοντέλο της γραμμικής παλινδρόμησης (Προβλεπόμενες). Εάν υπάρχει στήλη στο dataset με πραγματικές πωλήσεις μπορούμε να παραβλέψουμε το βήμα δημιουργίας της στήλης με τις τυχαίες πωλήσεις. Επιπλέον, ελέγχουμε αν το dataset μας έχει επαρκείς τιμές, εάν είναι επαρκείς εκπαιδεύουμε το μοντέλο μας και το αξιολογούμε με τις συναρτήσεις mean_squared_error και r2_score. Τέλος, οπτικοποιούμε τις προβλέψεις και την κατανομή των δεδομένων.
+# Methodology
+First, after loading the dataset from the .csv file, we need to check if the values in the views column contain the ',' symbol and, if so, replace it with a blank space to avoid incorrect results or value losses. Next, we convert all our data to numerical values for verification purposes and round them to one decimal place. We examine if there are any missing data and, if so, remove them. We add a column to the dataset with random sales figures to compare them later with those predicted by the linear regression model (Predicted Sales). If there is already a column with actual sales in the dataset, we can skip the step of creating the random sales column. Additionally, we check if our dataset has sufficient values, and if it does, we train our model and evaluate it using the mean_squared_error and r2_score functions. Finally, we visualize the predictions and the distribution of the data.
 
-# Υλοποίηση
-Η υλοποίηση του συγκεκριμένου Project πραγματοποιήθηκε από τον Καλδάνη Χρήστο, προπτυχιακό φοιτητή στο τμήμα Πληροφορικής του Ιονίου Πανεπιστημίου.
+# Implementation
+The implementation of this project was carried out by Christos Kaldanis, an undergraduate student at the Department of Informatics, Ionian University.
